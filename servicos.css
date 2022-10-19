@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    max-width: 960px;
+    margin: auto;
+    background-color: azure;
+}
+.container {
+    padding: 10px;
+    grid-gap: 10px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: 
+    'topo topo'
+    'item2 item3'
+    'item4 item5'
+    'item1 item1'
+    'rodape rodape';
+    grid-template-columns: repeat(2, 1fr);
+}
+.topo {
+    grid-area: topo;
+    padding: 10px;
+    text-align: center;
+    border: solid 1px black;
+}
+.item1 {
+    text-align: center;
+    padding: 10px;
+    grid-area: item1;
+    border: solid 1px black;
+}
+.item2 {
+    padding: 10px;
+    grid-area: item2;
+    border: solid 1px black;
+}
+.item3 {
+    padding: 10px;
+    grid-area: item3;
+    border: solid 1px black;
+}
+.item4 {
+    padding: 10px;
+    grid-area: item4;
+    border: solid 1px black;
+}
+.item5 {
+    padding: 10px;
+    grid-area: item5;
+    border: solid 1px black;
+}
+.rodape {
+    grid-area: rodape;
+    text-align: center;
+}
