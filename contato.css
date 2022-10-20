@@ -4,3 +4,30 @@ body {
     max-width: 960px;
     margin: auto;
 }
+.container{
+    border: solid 1px black;
+    background-color: azure;
+    display: grid;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'topo'
+    'contato'
+    'rodape';
+}
+.topo {
+    grid-area: topo;
+    padding: 10px;
+    text-align: center;
+    border: solid 1px black;
+}
+.rodape {
+    grid-area: rodape;
+    text-align: center;
+}
+.contato {
+    border: solid 1px black;
+    padding: 10px;
+    grid-area: contato;
+    text-align: center;
+}
